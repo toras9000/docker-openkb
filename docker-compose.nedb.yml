@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    image: toras9000/openkb
+    ports:
+      - "8002:4444"
+    volumes:
+      - ./volumes/app/config:/openkb/config
+      - ./volumes/db:/openkb/data
