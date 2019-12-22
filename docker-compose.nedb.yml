@@ -2,6 +2,7 @@ version: '2'
 services:
   app:
     image: toras9000/openkb
+    build: ./build
     ports:
       - "8002:4444"
     volumes:

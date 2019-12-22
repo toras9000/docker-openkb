@@ -4,13 +4,13 @@
 
 ## Tags
 
-- latest ([Dockerfile](https://github.com/toras9000/docker-openkb/blob/master/Dockerfile))
+- latest ([Dockerfile](https://github.com/toras9000/docker-openkb/blob/master/build/Dockerfile))
 
 ## Usage
 If you run for trial.  
 The container provides services on port 4444.  
 
-```
+```bash
 $ docker run -d -p 8000:4444 toras9000/openkb
 ```
 
@@ -26,7 +26,7 @@ If not, copy the application configuration file here.
 Storage directory for default nedb files.
 
 An example of persisting with built-in nedb is:
-```
+```bash
 $ docker run -d \
              -p 8000:4444 \
              -v /opt/openkb/config:/openkb/config \

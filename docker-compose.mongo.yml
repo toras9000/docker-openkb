@@ -15,6 +15,7 @@ services:
 
   app:
     image: toras9000/openkb
+    build: ./build
     links:
       - db:db-container
     ports:
